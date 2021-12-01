@@ -38,16 +38,22 @@ The design is free, but if you need some guidance, here's an example you can fol
 
 ![image](https://user-images.githubusercontent.com/47493473/144288977-64fbb8b3-335c-4938-ab62-06bbb788ebaa.png)
 
-## Hints
-- In order to achieve this challenge, you need to interact with the [Shopify API](https://shopify.dev/api). However you don't need to access the Shopify Admin.
-- To tackle this task, you can go with a Basic HTTP authentication (check the Shopify DOCs). We'll provide you with the API key.
-- Whenever you create an order, Shopify answers with the full order or a descriptive error.
-
 ## Language
 Our preferred stack at Umamicart is ReactJs and NextJs. However, feel free to use the language in which you feel more comfortable.
+
+## The result
+- We expect a Git repo with the source code (this one).
+- We need semantic and small commits along the process. Please, don’t make a single huge commit at the end.
+- Deploy your app in a deployment platform such as Vercel or Netlify. Mind the env variables.
+
 
 ## An example
 This is quick example of what our current app is working like, and more or less what we would expect out of this exercise.
 ![Test-Gif](https://user-images.githubusercontent.com/47493473/144290866-9a873f3d-b13b-444f-a7c2-dce967321960.gif)
 
+
+## Hints
+- In order to achieve this challenge, you need to interact with the [Shopify API](https://shopify.dev/api). However you don't need to access the Shopify Admin.
+- To tackle this task, you can go with a Basic HTTP authentication (check the Shopify DOCs). We'll provide you with the API key.
+- Whenever you create an order, Shopify answers with the full order or a descriptive error.
 
