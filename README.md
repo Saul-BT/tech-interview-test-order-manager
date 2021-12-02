@@ -38,7 +38,7 @@ The design is free, but if you need some guidance, here's an example you can fol
 
 ![image](https://user-images.githubusercontent.com/47493473/144288977-64fbb8b3-335c-4938-ab62-06bbb788ebaa.png)
 
-## Language
+## Stack 
 Our preferred stack at Umamicart is ReactJs and NextJs. However, feel free to use the language in which you feel more comfortable.
 
 ## The result
