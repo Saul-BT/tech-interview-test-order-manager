@@ -53,7 +53,7 @@ This is quick example of what our current app is working like, and more or less 
 
 
 ## Hints
-- In order to achieve this challenge, you need to interact with the [Shopify API](https://shopify.dev/api). However you don't need to access the Shopify Admin.
+- In order to achieve this challenge, you need to interact with the [Shopify API](https://shopify.dev/api/admin-rest/2021-10/resources/order#[post]/admin/api/2021-10/orders.json). However you don't need to access the Shopify Admin.
 - To tackle this task, you can go with a Basic HTTP authentication (check the Shopify DOCs). We'll provide you with the API key.
 - Whenever you create an order, Shopify answers with the full order or a descriptive error.
 
