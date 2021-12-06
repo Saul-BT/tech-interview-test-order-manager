@@ -1,0 +1,8 @@
+.orderCard {
+    padding: 1rem 2rem;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: .3rem;
+    box-shadow: 0 2ex 3ex -1ex rgba(0, 0, 0, .1);
+    line-height: .5;
+}
