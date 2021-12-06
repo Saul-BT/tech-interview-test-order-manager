@@ -1,59 +1,34 @@
-# tech-interview-test-order-manager
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## The goal
-While developing functionalities for the warehouse or the operations department, we need to create lots of new Shopify orders just for the sake of testing. However, the shopify Admin UI requires a lot of information to create a test order resulting in a quite long process for always entering the same testing information.
-The goal of this project is to build a simple app that allows you to:
-- Create a Shopify order by just clicking on a button.
-- Retrieve a list of all the test-orders you create.
+## Getting Started
 
-## Specs
-The app must have:
+First, run the development server:
 
-- Allow the user to create an Order in the Shopify store by only clicking on a button.
-  - The order should be created with the following data:
-    - Buyer info: 
-      - Name of the client: Umamitest Client
-      - last_name: "Testingson"
-      - address1: "20 W 34th St"
-      - phone: "777-777-7777"
-      - city: "New York"
-      - province: "New York"
-      - country: "United States"
-      - zip: "10001"
-    - Product info:
-      - Name: Vermicelli rice
-      - variant_id: 41128163147931
-    - Tagged as "test-order-interview1"
+```bash
+npm run dev
+# or
+yarn dev
+```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Retrieve a list of all the *open orders* you have just created.
-  - We should be able to see the following fields: `tags`, `id`, `created_at`, `fulfillment_status`
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-It would be *nice* to have:
-- Show the JSON of the order returned by Shopify after the order creation, formatted.
-- A test made with JEST or any other testing library for the order creation.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-## Design
-The design is free, but if you need some guidance, here's an example you can follow along.  Feel free to create a new one:
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-![image](https://user-images.githubusercontent.com/47493473/144288977-64fbb8b3-335c-4938-ab62-06bbb788ebaa.png)
+## Learn More
 
-## Stack 
-Our preferred stack at Umamicart is ReactJs and NextJs. However, feel free to use the language in which you feel more comfortable.
+To learn more about Next.js, take a look at the following resources:
 
-## The result
-- We expect a Git repo with the source code (this one).
-- We need semantic and small commits along the process. Please, don’t make a single huge commit at the end.
-- Deploy your app in a deployment platform such as Vercel or Netlify. Mind the env variables.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## An example
-This is quick example of what our current app is working like, and more or less what we would expect out of this exercise.
-![Test-Gif](https://user-images.githubusercontent.com/47493473/144290866-9a873f3d-b13b-444f-a7c2-dce967321960.gif)
+## Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Hints
-- In order to achieve this challenge, you need to interact with the [Shopify API](https://shopify.dev/api/admin-rest/2021-10/resources/order#[post]/admin/api/2021-10/orders.json). However you don't need to access the Shopify Admin.
-- To tackle this task, you can go with a Basic HTTP authentication (check the Shopify DOCs). We'll provide you with the API key.
-- Whenever you create an order, Shopify answers with the full order or a descriptive error.
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
