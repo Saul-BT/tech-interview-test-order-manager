@@ -14,13 +14,13 @@ const Home: NextPage = () => {
   );
   const fetchOrders = async () => {
     setOrders({ loading: true });
-    const response = await fetch('http://localhost:3000/api/orders');
+    const response = await fetch('/api/orders');
     const data = await response.json();
     setOrders({ loading: false, items: data });
   }
   const createDummyOrder = async () => {
     setCreatedOrder({ loading: true });
-    const response = await fetch('http://localhost:3000/api/orders', { method: 'POST' });
+    const response = await fetch('/api/orders', { method: 'POST' });
     const data = await response.json();
     setCreatedOrder({ loading: false, data });
   }
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1>Test Order Manager</h1>
+        <h1>🧪 Test Order Manager</h1>
 
         <section>
           <header>
